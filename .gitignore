@@ -1,0 +1,17 @@
+/.env
+/.idea
+/vendor
+.DS_Store
+
+# vim
+**/*.swp
+**/*.swo
+
+uploads/
+
+# gulp, sass et al
+web/assets/css/*.map
+gulpfile.js
+node_modules/
+package-lock.json
+package.json

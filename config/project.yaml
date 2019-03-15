@@ -1,0 +1,33 @@
+dateModified: 1552682472
+email:
+  fromEmail: josef.renner@gmail.com
+  fromName: 'Anna Wehrli'
+  transportType: craft\mail\transportadapters\Sendmail
+fieldGroups:
+  e2e0a909-7216-4ab8-87e5-aa52bf3154cb:
+    name: Common
+siteGroups:
+  2e061fde-6257-436c-8895-77032b31362e:
+    name: 'Anna Wehrli'
+sites:
+  5b9c62f0-83b5-4579-a3bd-afe8f211c8cf:
+    baseUrl: $DEFAULT_SITE_URL
+    handle: default
+    hasUrls: true
+    language: de-CH
+    name: 'Anna Wehrli'
+    primary: true
+    siteGroup: 2e061fde-6257-436c-8895-77032b31362e
+    sortOrder: 1
+system:
+  edition: solo
+  name: 'Anna Wehrli'
+  live: true
+  schemaVersion: 3.1.25
+  timeZone: Europe/Zurich
+users:
+  requireEmailVerification: true
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoVolumeUid: null
+  photoSubpath: ''
