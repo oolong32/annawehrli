@@ -1,4 +1,4 @@
-dateModified: 1552683187
+dateModified: 1553629321
 email:
   fromEmail: josef.renner@gmail.com
   fromName: 'Anna Wehrli'
@@ -6,6 +6,63 @@ email:
 fieldGroups:
   e2e0a909-7216-4ab8-87e5-aa52bf3154cb:
     name: Common
+  deaea684-bfd3-47c0-9817-6ac472b63ed5:
+    name: Projekte
+fields:
+  faec407c-fc81-43d8-a4f4-4c2a2ec29040:
+    name: Beschrieb
+    handle: description
+    instructions: ''
+    searchable: true
+    translationMethod: none
+    translationKeyFormat: null
+    type: craft\redactor\Field
+    settings:
+      redactorConfig: Simple.json
+      purifierConfig: ''
+      cleanupHtml: '1'
+      purifyHtml: '1'
+      columnType: text
+      availableVolumes: ''
+      availableTransforms: '*'
+    contentColumnType: text
+    fieldGroup: deaea684-bfd3-47c0-9817-6ac472b63ed5
+  f9df003a-f604-4041-b98f-c33f23ae2db4:
+    name: Bilder
+    handle: images
+    instructions: ''
+    searchable: true
+    translationMethod: site
+    translationKeyFormat: null
+    type: craft\fields\Assets
+    settings:
+      useSingleFolder: '1'
+      defaultUploadLocationSource: 'volume:39b7ea48-104d-4688-8428-d1e34df3e863'
+      defaultUploadLocationSubpath: ''
+      singleUploadLocationSource: 'volume:39b7ea48-104d-4688-8428-d1e34df3e863'
+      singleUploadLocationSubpath: /images
+      restrictFiles: '1'
+      allowedKinds:
+        - image
+      sources:
+        - 'volume:39b7ea48-104d-4688-8428-d1e34df3e863'
+      source: null
+      targetSiteId: null
+      viewMode: list
+      limit: ''
+      selectionLabel: ''
+      localizeRelations: false
+    contentColumnType: string
+    fieldGroup: deaea684-bfd3-47c0-9817-6ac472b63ed5
+plugins:
+  element-api:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.2.2
 sections:
   61a820dc-d760-4060-8879-1f7686a42bca:
     name: Home
@@ -27,6 +84,42 @@ sections:
         titleLabel: null
         titleFormat: '{section.name|raw}'
         sortOrder: 1
+  6188f091-f00a-439a-afea-3f10af6663d9:
+    name: Projekte
+    handle: projects
+    type: structure
+    enableVersioning: true
+    propagateEntries: true
+    siteSettings:
+      5b9c62f0-83b5-4579-a3bd-afe8f211c8cf:
+        enabledByDefault: true
+        hasUrls: true
+        uriFormat: 'projekte/{slug}'
+        template: ''
+    structure:
+      uid: 011626c9-95dc-4893-b195-e561668fba38
+      maxLevels: '1'
+    entryTypes:
+      a6286cb6-3444-42f6-918b-6569846d1a9c:
+        name: Projekte
+        handle: projects
+        hasTitleField: true
+        titleLabel: Titel
+        titleFormat: ''
+        sortOrder: 1
+        fieldLayouts:
+          64a1cc33-30cc-46b8-b5a5-a23fa9fc6ccf:
+            tabs:
+              -
+                name: Projekte
+                sortOrder: 1
+                fields:
+                  faec407c-fc81-43d8-a4f4-4c2a2ec29040:
+                    required: false
+                    sortOrder: 1
+                  f9df003a-f604-4041-b98f-c33f23ae2db4:
+                    required: false
+                    sortOrder: 2
 siteGroups:
   2e061fde-6257-436c-8895-77032b31362e:
     name: 'Anna Wehrli'
